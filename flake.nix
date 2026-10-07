@@ -17,7 +17,7 @@
     # WARNING: Do not use relative path, it breaks caching of NBS.
     # Remember to call 'nix flake update' when NBS is updated.
     nimbusBuildSystem = {
-      url = "git+https://github.com/status-im/nimbus-build-system?submodules=1#";
+      url = "git+https://github.com/status-im/nimbus-build-system?ref=nix/use-flake-inputs-for-sources&submodules=1#";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
